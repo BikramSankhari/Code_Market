@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Django_Img/Dockerfile
-    # volumes:
-    #   - ./:/usr/src/app/
+    volumes:
+      - ./:/usr/src/app/
     ports:
-      - 8000:8000
+      - 8000:8000s
